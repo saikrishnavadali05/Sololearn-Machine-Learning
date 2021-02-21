@@ -1,7 +1,7 @@
 
 ### Machine Learning
 
-* Sololearn
+* !(Sololearn)[https://www.sololearn.com/learning/1094] 
 * Python
 
 ## The Basics
