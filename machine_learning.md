@@ -1,8 +1,7 @@
 
-### Machine Learning
+### Machine Learning Sololearn Notes
 
-* [Sololearn](https://www.sololearn.com/learning/1094)
-* Python
+* Source : [Sololearn](https://www.sololearn.com/learning/1094)
 
 ## The Basics
 
