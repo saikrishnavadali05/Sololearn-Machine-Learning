@@ -106,3 +106,9 @@ The percentiles helps us gain understanding of how the data is distributed (or D
    4. To get the standard deviation, we just take the square root of this number and get: 6.34
 
    ![](images/std_var.PNG)
+
+### Reading Data with Pandas
+
+* Pandas is a Python module that helps us read and manipulate data. 
+* What's cool about pandas is that you can take in data and view it as a table that's human readable, but it can also be interpreted numerically so that you can do lots of computations with it.
+* We call the table of data a DataFrame.
