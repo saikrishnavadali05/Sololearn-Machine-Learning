@@ -118,7 +118,7 @@ The percentiles helps us gain understanding of how the data is distributed (or D
    2. describe() returns a table of statistics about the columns.
 
 - For each column we see a few statistics. Note that it only gives statistics for the numerical columns.
-   1. **Count:** This is the number of rows that have a value. In our case, every passenger has a value for each of the columns, so the value is 887 (the total number of passengers).
+   1. **Count:** This is the number of rows that have a value. 
    2. **Mean:** Recall that the mean is the standard average.
    3. **Std:** This is short for standard deviation. This is a measure of how dispersed the data is.
    4. **Min:** The smallest value
@@ -128,3 +128,15 @@ The percentiles helps us gain understanding of how the data is distributed (or D
    8. **Max:** The largest value
 
 - describe() method gives some intuition about the data.
+
+### Manipulating Data with Pandas
+
+To select a single column, we use the square brackets and the column name.
+
+```python
+col = df['Fare']
+print(col)
+```
+
+* A Pandas Series is a single column from a Pandas DataFrame.
+* A series is like a DataFrame, but it's just a single column.
