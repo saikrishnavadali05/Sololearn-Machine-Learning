@@ -131,12 +131,48 @@ The percentiles helps us gain understanding of how the data is distributed (or D
 
 ### Manipulating Data with Pandas
 
-To select a single column, we use the square brackets and the column name.
+1. To select a single column, we use the square brackets and the column name.
 
-```python
-col = df['Fare']
-print(col)
-```
+   ```python
+   col = df['Fare']
+   print(col)
+   ```
 
-* A Pandas Series is a single column from a Pandas DataFrame.
-* A series is like a DataFrame, but it's just a single column.
+   * Here col object type is Pandas Series
+   * A Pandas Series is a single column from a Pandas DataFrame.
+   * A series is like a DataFrame, but it's just a single column.
+
+2. When selecting a single column from a Pandas DataFrame, we use single square brackets. When selecting multiple columns, we use double square brackets.
+
+   ```python
+   small_df = df[['Age', 'Sex', 'Survived']]
+   ```
+
+3. Creating a Column
+
+   1. **Example** : our data has the sex of the passenger as a string ("male" or "female"). This is easy for a human to read, but when we do computations on our data later on, we’ll want it as boolean values (Trues and Falses).
+   
+   2. We can easily create a new column in our DataFrame that is :
+      * **True** if the passenger is **male** 
+      * **False** if they’re **female**.
+
+   3. We create a Pandas Series that will be a series of Trues and Falses (True if the passenger is male and False if the passenger is female).
+
+      ```python
+      df['Sex'] == 'male'
+      ```
+   
+   4. Now we want to create a column with this result. To create a new column, we use the same bracket syntax (df['male']) and then assign this new value to it.
+
+      ```python
+      df['male'] = df['Sex'] == 'male'
+      ```
+   
+   5. The output dataframe will have a new column with boolean values for male.
+
+      ```python
+      import pandas as pd
+      df = pd.read_csv('https://sololearn.com/uploads/files/titanic.csv')
+      df['male'] = df['Sex'] == 'male'
+      print(df.head())
+      ```
