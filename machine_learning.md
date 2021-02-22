@@ -104,3 +104,5 @@ The percentiles helps us gain understanding of how the data is distributed (or D
          362 / 9 = 40.22 
 
    4. To get the standard deviation, we just take the square root of this number and get: 6.34
+
+   ![](images/std_var.PNG)
