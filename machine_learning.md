@@ -15,5 +15,14 @@ We use computer power to analyze examples from the past to build a model that ca
    * Amazon Pricing System 
    * credit card company calls based on suspicious activity (anamolous behaviour prediction models)
 
-In this course we’ll learn several techniques for solving machine learning problems.
-Machine Learning can be used to create a chatbot, detect spam or image recognition.
+- Machine Learning can be used to :
+   * create a chatbot
+   * detect spam 
+   * image recognition.
+
+- Approach : 
+   * Python (Programming Language)
+   * Pandas (library) for reading data and data manipulation
+   * Numpy (library) is used for computations of numerical data
+   * Matplotlib (library) is used for graphing data
+   * scikit-learn (library) is used for machine learning models
