@@ -112,3 +112,19 @@ The percentiles helps us gain understanding of how the data is distributed (or D
 * Pandas is a Python module that helps us read and manipulate data. 
 * What's cool about pandas is that you can take in data and view it as a table that's human readable, but it can also be interpreted numerically so that you can do lots of computations with it.
 * We call the table of data a DataFrame.
+
+- A few useful functions from pandas library:
+   1. head() returns first 5 rows
+   2. describe() returns a table of statistics about the columns.
+
+- For each column we see a few statistics. Note that it only gives statistics for the numerical columns.
+   1. **Count:** This is the number of rows that have a value. In our case, every passenger has a value for each of the columns, so the value is 887 (the total number of passengers).
+   2. **Mean:** Recall that the mean is the standard average.
+   3. **Std:** This is short for standard deviation. This is a measure of how dispersed the data is.
+   4. **Min:** The smallest value
+   5. **25%:** The 25th percentile
+   6. **50%:** The 50th percentile, also known as the median.
+   7. **75%:** The 75th percentile
+   8. **Max:** The largest value
+
+- describe() method gives some intuition about the data.
