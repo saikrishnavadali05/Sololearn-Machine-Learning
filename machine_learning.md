@@ -55,4 +55,31 @@ We use computer power to analyze examples from the past to build a model that ca
 
  *Sololearn course will focus on supervised learning and classification.*
 
+ ## Statistics Review
+
+ - Averages
+   * The mean is the most commonly known average.
+   * The median is the value in the middle. 
+
+   ( If there is an even number of datapoints, to find the median (or 50th percentile), you take the mean of the two values in the middle.)
+
+*In statistics, both the mean and the median are called averages. The layman’s average is the mean.*
+
+- Percentiles
+
+   * The median can also be thought of as the 50th percentile. 
+   * The 25th percentile is the value that’s one quarter of the way through the data. This is the value where 25% of the data is less than it (and 75% of the data is greater than it).
+   * Similarly, the 75th percentile is three quarters of the way through the data. 
+
+If we look at these ages:
+15, 16, 18, 19, 22, 24, 29, 30, 34 
+
+   * 25th percentile is 18 (the 3rd datapoint).
+   * 75th percentile is 29 (the 7th datapoint).                          
+   * The full range of our data is between 15 and 34. 
+   * The 25th and 75th percentiles tell us that half our data is between 18 and 29. 
+
+The percentiles helps us gain understanding of how the data is distributed (or Data Distribution).
+
+
 
