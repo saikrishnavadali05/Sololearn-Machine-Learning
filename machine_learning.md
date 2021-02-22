@@ -177,7 +177,7 @@ The percentiles helps us gain understanding of how the data is distributed (or D
       print(df.head())
       ```
 
-   ### Numpy
+### Numpy Basics
 
    1. Numpy is a Python package for manipulating lists and tables of numerical data. 
    2. We call the list or table of data a numpy array.
@@ -186,3 +186,40 @@ The percentiles helps us gain understanding of how the data is distributed (or D
    5. **numpy arrays** - less human readable. But, have format to enable the necessary computation.
    6. Numpy is a Python module for doing calculations on tables of data. 
    7. Pandas was actually built using Numpy as it’s foundation.
+
+### Converting from a Pandas Series to a Numpy Array
+
+   * First we recall that we can use the single bracket notation to get a pandas Series of the Fare column as follows.
+
+      ```python
+         df['Fare']
+      ```
+
+   * Then we use the values attribute to get the values as a numpy array.
+
+      ```python
+      df['Fare'].values
+      ```
+
+   * The values attribute of a Pandas Series give the data as a numpy array.
+
+### Converting from a Pandas DataFrame to a Numpy Array
+
+   * The values attribute of a Pandas DataFrame give the data as a 2d numpy array.
+   * If we have a pandas DataFrame (instead of a Series as in the last part), we can still use the values attribute, but it returns a 2-dimensional numpy array.
+
+      ```python
+         df[['Pclass', 'Fare', 'Age']].values 
+      ```
+
+### Numpy Shape Attribute
+
+   * We use the numpy **shape** attribute to determine the size of our numpy array. 
+   * The size tells us how many rows and columns are in our data.
+   * If we look at the shape, we get the number of rows and the number of columns:
+      
+      ```python
+         print(arr.shape) 
+      ```
+
+   * You can also use the shape attribute on a pandas DataFrame (df.shape).
