@@ -176,3 +176,13 @@ The percentiles helps us gain understanding of how the data is distributed (or D
       df['male'] = df['Sex'] == 'male'
       print(df.head())
       ```
+
+   ### Numpy
+
+   1. Numpy is a Python package for manipulating lists and tables of numerical data. 
+   2. We call the list or table of data a numpy array.
+   3. We often will take the data from our pandas DataFrame and put it in numpy arrays. 
+   4. **Pandas DataFrames** - human readable. But, not the ideal format for doing calculations. 
+   5. **numpy arrays** - less human readable. But, have format to enable the necessary computation.
+   6. Numpy is a Python module for doing calculations on tables of data. 
+   7. Pandas was actually built using Numpy as it’s foundation.
