@@ -81,5 +81,26 @@ If we look at these ages:
 
 The percentiles helps us gain understanding of how the data is distributed (or Data Distribution).
 
+- Standard Deviation & Variance
 
+   * Deeper understanding of the distribution of our data with the standard deviation and variance. 
+   * The standard deviation and variance are measures of how dispersed or spread out the data is.
 
+- Steps for calculating Standard Deviation and Variance:
+
+   1. We measure how far each datapoint is from the mean.
+
+      ```15, 16, 18, 19, 22, 24, 29, 30, 34```
+      
+      Recall that the mean is 23.
+
+   2. Let's calculate how far each value is from the mean. 
+   
+      ```15 is 8 away from the mean (since 23-15=8).```
+         Here's a list of all these distances:
+         8, 7, 5, 4, 1, 1, 6, 7, 11
+
+   3. We square these values and add them together. Divide this value by the total number of values and that gives us the variance.
+         362 / 9 = 40.22 
+
+   4. To get the standard deviation, we just take the square root of this number and get: 6.34
